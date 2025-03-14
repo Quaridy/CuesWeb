@@ -1,49 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the particles behind other content */
 }
 
 .container {
     text-align: center;
-}
-
-.logo {
-    font-size: 48px;
-    font-weight: bold;
-    color: #4285f4;
-    margin-bottom: 20px;
-}
-
-.search-form {
-    display: inline-block;
-}
-
-.search-input {
-    width: 400px;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid #dcdcdc;
-    border-radius: 20px;
-    font-size: 16px;
-}
-
-.search-button {
-    height: 40px;
-    padding: 0 20px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #4285f4;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #357ae8;
-}
+    position: relative; /* Position relative to the particles */
+    z-index:
